@@ -1,5 +1,5 @@
 #!/bin/bash
-LONGVERSION=$(system_profiler SPSoftwareDataType | awk '/System Version/{print $5}')
+LONGVERSION=$(sw_vers -productVersion)
 MINOR=$(echo $LONGVERSION | cut -d. -f2)
 UPDATE=$(echo $LONGVERSION | cut -d. -f3)
 
