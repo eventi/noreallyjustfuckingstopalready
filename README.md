@@ -1,4 +1,5 @@
 # noreallyjustfuckingstopalready
+
 Please OS X (or whatever your name is) just fucking reset your DNS cache please
 
 F.A.Q
@@ -30,5 +31,4 @@ Antigen will handle cloning the plugin for you automatically the next time you s
 
 ### [Zgen](https://github.com/tarjoilija/zgen)
 
-Add `zgen load eventi/noreallyjustfuckingstopalready` to your .zshrc file in the same function you're doing your other `zgen load` calls in.
-
+Add `zgen load eventi/noreallyjustfuckingstopalready` to your .zshrc file in the same function you're doing your other `zgen load` calls in. zgen will take care of cloning the repository and adding it to your `$PATH`.
