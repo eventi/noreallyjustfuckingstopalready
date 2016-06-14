@@ -1,13 +1,13 @@
 #!/bin/bash
+# HT https://support.apple.com/en-us/HT202516
 LONGVERSION=$(system_profiler SPSoftwareDataType | awk '/System Version/{print $5}')
+#Why do people grep | awk ? awk has pattern matching; please stop!
 MINOR=$(echo $LONGVERSION | cut -d. -f2)
 UPDATE=$(echo $LONGVERSION | cut -d. -f3)
 
 if (( $MINOR < 7 )) ; then 
-    echo "SNOW LEOPARD"
     FLUSH="dscacheutil -flushcache"
 elif (( $MINOR < 10 )) ; then
-    echo "Mavericks Lion"
     FLUSH="killall -HUP mDNSResponder"
 elif (( $MINOR == 10 )) ; then
     if (( $UPDATE < 4 )) ; then
