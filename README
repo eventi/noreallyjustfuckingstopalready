@@ -1,5 +1,17 @@
 Please OS X (or whatever your name is) just fucking reset your DNS cache please
 
+Installation:
+
+With https://github.com/bpkg/bpkg do:
+
+  $ bpkg install -g eventi/noreallyjustfuckingstopalready
+
+From source:
+
+  $ git clone https://github.com/eventi/noreallyjustfuckingstopalready.git
+  $ cd noreallyjustfuckingstopalready
+  $ install -b flu.sh ${PREFIX:-/usr/local}/bin/flu.sh
+
 F.A.Q
 
 Q) What? Why?
