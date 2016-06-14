@@ -1,6 +1,6 @@
 #!/bin/bash
 # HT https://support.apple.com/en-us/HT202516
-LONGVERSION=$(system_profiler SPSoftwareDataType | awk '/System Version/{print $5}')
+LONGVERSION=$(sw_vers -productVersion)
 #Why do people grep | awk ? awk has pattern matching; please stop!
 MINOR=$(echo $LONGVERSION | cut -d. -f2)
 UPDATE=$(echo $LONGVERSION | cut -d. -f3)
