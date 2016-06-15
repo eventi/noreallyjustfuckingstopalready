@@ -15,6 +15,8 @@ elif (( $MINOR == 10 )) ; then
     else
         FLUSH="killall -HUP mDNSResponder"
     fi
+elif (( $MINOR == 11 )) ; then
+    FLUSH="dscacheutil -flushcache; killall -HUP mDNSResponder"
 else
     echo VERSION $LONGVERSION
     FLUSH="killall -HUP mDNSResponder"
