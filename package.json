@@ -1,7 +1,7 @@
 {
   "name": "noreallyjustfuckingstopalready",
   "repo": "eventi/noreallyjustfuckingstopalready",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Please OS X just fucking reset your DNS cache please",
   "global": "1",
   "install": "install -b flu.sh ${PREFIX:-/usr/local}/bin/flu.sh",
