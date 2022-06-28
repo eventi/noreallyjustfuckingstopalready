@@ -19,6 +19,14 @@ Add `antigen bundle eventi/noreallyjustfuckingstopalready` to your `.zshrc` with
 
 Antigen will handle cloning the plugin for you automatically the next time you start zsh. You can also add the plugin to a running zsh with `antigen bundle eventi/noreallyjustfuckingstopalready` for testing before adding it to your `.zshrc`.
 
+Fig
+-----
+
+Install this plugin with [Fig](https://fig.io) in just one click.
+
+<a href="https://fig.io/plugins/other/noreallyjustfuckingstopalready_eventi" target="_blank"><img src="https://fig.io/badges/install-with-fig.svg" /></a>
+
+
 Oh-My-Zsh
 -----
     cd ~/.oh-my-zsh/custom/plugins
